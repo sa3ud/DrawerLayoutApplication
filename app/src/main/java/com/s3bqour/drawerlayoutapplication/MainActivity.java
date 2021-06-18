@@ -81,8 +81,8 @@ public class MainActivity extends AppCompatActivity implements HomeFragment.OnFr
     public void onBackPressed() {
 
         // check if drawer is open
-        if (drawerLy.isDrawerOpen(Gravity.RIGHT)) {
-
+        if (drawerLy.isDrawerOpen(Gravity.LEFT)) {
+            // close drawer when it is open
             // close drawer when it is open
             closeDrawer();
             Toast.makeText(MainActivity.this, "Closed Drawer", Toast.LENGTH_SHORT).show();
